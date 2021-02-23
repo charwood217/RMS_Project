@@ -20,7 +20,9 @@
         window.addEventListener('load', addDarkmodeWidget);
     </script>
 
-    <title>WMPD Home</title>
+    <link href="three_fields.css" rel="stylesheet">
+
+    <title>Incident</title>
 </head>
 
 <body>
@@ -75,7 +77,15 @@
             </div>
         </div>
     </nav>
-
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">West-MEC Police Department ⊚ Incident Search</a>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+        </div>
+    </nav>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
