@@ -11,7 +11,7 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Dark mode -->
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> -->
   <script>
     const button = document.getElementById("button")
     function addDarkmodeWidget() {
@@ -19,6 +19,8 @@
     }
     window.addEventListener('load', addDarkmodeWidget);
   </script>
+
+  <link href="home.css" rel="stylesheet">
 
   <title>WMPD Home</title>
 </head>
@@ -76,11 +78,19 @@
     </div>
   </nav>
 
-  <a href="index.html">
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">Log Out</button>
-    </div>
-  </a>
+<section>
+
+<img src="logo.png" alt="WMPD Logo"> 
+
+    <a href="index.html">
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button">Log Out</button>
+        </div>
+      </a>
+
+      <br><br>
+
+</section>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

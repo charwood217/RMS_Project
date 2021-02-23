@@ -1,0 +1,15 @@
+body > section{
+    background-image: url('home_bg.jpg');
+}
+img{
+    object-position: center;
+}
+
+button.btn{
+    background-color: #F9A40D;
+    border: #F9A40D;
+}
+button.btn:hover{
+    background-color: #F47715;
+    border: #F47715;
+}
