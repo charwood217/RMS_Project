@@ -19,8 +19,21 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Login'});
+});
+app.get('/home', (req,res) => {
+  res.render('home', { title: 'Home' });
+});
+app.get('/incident', (req,res) => {
+  res.render('incident', { title: 'Incident' });
+});
+app.get('/person', (req,res) =>{
+  res.render('person', { title: 'Person' });
+});
+app.get('/vehicle', (req,res) => {
+  res.render('vehicle', { title: 'Vehicle' });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
