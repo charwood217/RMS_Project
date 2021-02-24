@@ -6,3 +6,8 @@ button.btn-outline-success:hover{
     background-color: #F47715;
     border-color: #F47715;
 }
+
+section#field_holder{
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+}
