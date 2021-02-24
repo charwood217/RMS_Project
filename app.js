@@ -34,7 +34,15 @@ app.get('/person', (req,res) =>{
 app.get('/vehicle', (req,res) => {
   res.render('vehicle');
 });
-
+app.get('/vehicle/report', (req,res) => {
+  res.render('vehicleReport');
+});
+app.get('/incident/report', (req,res) =>{
+  res.render('incidentReport');
+});
+app.get('/person/report', (req,res) => {
+  res.render('personReport');
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
