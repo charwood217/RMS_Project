@@ -4,8 +4,12 @@ html{
 body > section{
     background-image: url('home_bg.jpg');
 }
-img{
-    object-position: center;
+section > img{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button.btn{
