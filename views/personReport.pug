@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Document
+form
+  label#personCode Code
+  select#personCode(name='code')
+    option(value='RP') Reporting Party
+    option(value='W') Witness
+    option(value='V') Victim
+    option(value='IL') Investigative Lead
+    option(value='S') Suspect
+  br
+  label#FristName First Name
+  input#Firstname(type='string')
+  label#Middlename Middle Name
+  input#Middlename(type='string')
+  label#Lastname Last Name
+  input#LastName(type='string')
+  br
+  label#Gender Gender
+  select#Gender(name='Gender')
+    option(value='male') Male
+    option(value='female') Female
+  br
+  label#Race Race
+  select#Race(name='Race')
+    option(value='Black') Black
+    option(value='White') White
+    option(value='Hispanic') Hispanic
+    option(value='Indian') Indian(Native American)
+    option(value='Asian') Asian
+    option(value='Unknown') Unknown
+  br
+  label(id='#')
+  button(type='submit') Report Complete
