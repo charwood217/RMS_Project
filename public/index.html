@@ -16,6 +16,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="login_css/style.css">
 
+    <!-- Login JS -->
+    <script src="login.js"></script>
     <title>WMPD Login</title>
   </head>
   <body>
@@ -44,16 +46,15 @@
                 </div>
                 
                 <div class="d-sm-flex mb-5 align-items-center">
-                  <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
-                    <input type="checkbox" checked="checked"/>
+
+
                     <div class="control__indicator"></div>
                   </label>
-                  <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+
                 </div>
- 
-                  <a href="home.html">
+
                     <!-- <input type="submit" value="Log In" class="btn btn-block btn-primary" /> -->
-                    <input type="button" value="Log In" class="btn btn-block btn-primary" />
+                    <input type="button" value="Log In" class="btn btn-block btn-primary" onclick="validate()" />
                   </a>
 
               </form>
