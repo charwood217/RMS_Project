@@ -9,11 +9,11 @@ function validate(){
     var password = document.getElementById("password").value;
 
     if(username === "admin" && password === "westmec"){
-        alert("Login succesful");
+        alert("Login successful.");
         location.replace("/home.html");
 
         return false;
     }else{
-        alert("Username or password is incorrect, please try again");
+        alert("Username or password is incorrect, please try again.");
     }
 }
