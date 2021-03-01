@@ -19,6 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var mongoose = require('mongoose');
+var dex_db_url = "mongodb+srv://jruiz181:Westmecstudent2020@rms.biz6n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+var mongoDB = process.env.URI || dex_db_url;
+mongoose.Promise = global.Promise;
+mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 app.get('/', (req, res) => {
   res.render('index');
 });
