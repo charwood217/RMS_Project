@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Incident Report</title>
+</head>
+<body>
+    <form>
+
+        <label id="crimeDate">Occurrence Date/Time</label>
+        <input type="datetime" id="crimeDate"/>
+
+        <label id="reportDate">Report Date</label>
+        <input type="date" id="reportDate"/>
+
+        <label id="radioCode">Incident Type(Radio Code)</label>
+        <input type="number" id="radioCode"/>
+        <br>
+
+        <label id="location">Location</label>
+        <input type="string" id="location"/>
+
+        <label id="locationName">Location Name</label>
+        <input type="string" id="locationName"/>
+        <br>
+        <!--
+            Clickable Persons File will Come here on viewable form.
+        -->
+
+        <label id="reportType">Report Type</label>
+        <select id="reportType">
+                <option value="P">Primary/Initial Report</option>
+                <option value="S">Supplementary Report</option>
+              </select>
+        
+        <label id="domesticViolence">Domestic Violence</label>
+        <input type="checkbox" id="domesticViolence">
+              <br>
+        
+        <label id="officerName">Officer Name</label>
+        <input type="string" id="officerName"/>
+
+        <label id="officerSerial#">Officer Serial Number</label>
+        <input type="string" id="officerSerial#">
+        <br>
+        
+        <button type="submit">Report Complete</button>
+
+    </form>
+</body>
+</html>
