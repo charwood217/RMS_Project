@@ -8,8 +8,8 @@ button.btn-outline-success:hover{
 }
 
 section#field_holder{
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 8.3%;
+    padding-right: 8.3%;
 }
 
 button#createNew_Button{
@@ -17,4 +17,11 @@ button#createNew_Button{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+div.d-flex{
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+div.text-primary{
+    color: #F47715;
 }
