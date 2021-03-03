@@ -11,7 +11,7 @@ var incidentReportController = require('./controllers/incidentReportController')
 var personReportController = require('./controllers/personReportController');
 var vehicleReportController = require('./controllers/vehicleReportController');
 
-router.get('/', indexController.index);
+router.get('/', indexController.index_Populate);
 // GET request for creating a Book. NOTE This must come before routes that display Book (uses id).
 router.get('/home', homeController.home_Populate);
 
