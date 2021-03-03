@@ -10,6 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <!-- CSS custom -->
+    <link rel="stylesheet" href="reportfiles.css">
   <!-- darkmode -->
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
   <script>
@@ -20,6 +22,7 @@
     window.addEventListener('load', addDarkmodeWidget);
   </script>
   <title>Vehicle Report</title>
+  <link rel="icon" type="image" href="logo.png">
 </head>
 
 <body id="bootstrap-overrides">
@@ -204,7 +207,7 @@
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                 <label class="form-check-label" for="defaultCheck1">
                   Keys in Vehicle?
-                </label> 
+                </label>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -220,19 +223,35 @@
               </div> <br><br>
               <h4>Any other details</h4>
               <div class="form-floating mb-3">
-                  <textarea class="form-control overflow-auto" placeholder="Leave a comment here" id="floatingTextarea"
-                    style="height: 300px; min-height: 300px; max-height: 300px;"></textarea>
-                  <label for="floatingTextarea">Comments</label>
-                </div>
+                <textarea class="form-control overflow-auto" placeholder="Leave a comment here" id="floatingTextarea"
+                  style="height: 300px; min-height: 300px; max-height: 300px;"></textarea>
+                <label for="floatingTextarea">Comments</label>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="input-group mb-3" id="userSerial_holder">
+          <span class="input-group-text" id="basic-addon1">Submitting Officer Serial Number</span>
+          <input type="text" class="form-control" placeholder="Serial Number" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div>
+
+        <div class="col-auto" id="password_holder">
+          <label for="inputPassword6" class="col-form-label">User Password</label>
+          <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+
+        <div>
+            <a href="person.html">
+              <button class="btn btn-primary btn-lg col-md ms-3 mx-3" type="button">Submit</button>
+            </a>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
