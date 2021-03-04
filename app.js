@@ -27,30 +27,34 @@ mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-app.get('/home', (req,res) => {
-  res.render('home');
-});
-app.get('/incident', (req,res) => {
-  res.render('incident');
-});
-app.get('/person', (req,res) =>{
-  res.render('person');
-});
-app.get('/vehicle', (req,res) => {
-  res.render('vehicle');
-});
-app.get('/vehicle/report', (req,res) => {
-  res.render('vehicleReport');
-});
-app.get('/incident/report', (req,res) =>{
-  res.render('incidentReport');
-});
-app.get('/person/report', (req,res) => {
-  res.render('personReport');
-});
+// app.get('/', (req, res) => {
+//   res.render('index');
+// });
+// app.get('/home', (req,res) => {
+//   res.render('home');
+// });
+// app.get('/incident', (req,res) => {
+//   res.render('incident');
+// });
+// app.get('/person', (req,res) =>{
+//   res.render('person');
+// });
+// app.get('/vehicle', (req,res) => {
+//   res.render('vehicle');
+// });
+// app.get('/vehicle/report', (req,res) => {
+//   res.render('vehicleReport');
+// });
+// app.get('/incident/report', (req,res) =>{
+//   res.render('incidentReport');
+// });
+// app.get('/person/report', (req,res) => {
+//   res.render('personReport');
+// });
+
+// app.get('/getdata', (req, res) => {
+//   res.render('personReport');
+// });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

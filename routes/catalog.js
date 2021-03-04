@@ -26,4 +26,6 @@ router.get('/incident/report', incidentReportController.incident_Report_Populate
 router.get('/person/report', personReportController.person_Report_Populate);
 
 router.get('/vehicle/report', vehicleReportController.vehicle_Report_Populate);
+
+router.get('person/report', personReportController.getData)
 module.exports = router;

@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "assert": "^2.0.0",
     "cookie-parser": "~1.4.4",
     "darkmode-js": "^1.5.7",
     "debug": "~2.6.9",
