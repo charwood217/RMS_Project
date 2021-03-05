@@ -33,3 +33,6 @@ div.card{
 table > thead{
     color: white;
 }
+table > tbody > tr > td > div.form-check > label.form-check-label{
+    color: white;
+}
