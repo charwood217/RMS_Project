@@ -15,6 +15,7 @@ head
     window.addEventListener('load', addDarkmodeWidget);
   link(href='three_fields.css' rel='stylesheet')
   title Person
+  link(rel='icon' type='image' href='logo.png')
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
   .container-fluid
     a.navbar-brand(href='#') West-Mec Police Department
@@ -23,13 +24,13 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
     #navbarNavDropdown.collapse.navbar-collapse
       ul.navbar-nav
         li.nav-item
-          a.nav-link(aria-current='page' href='home.html') Home
+          a.nav-link(aria-current='page' href='/home') Home
         li.nav-item
-          a.nav-link(href='incident.html') Incident(s)
+          a.nav-link(href='/incident') Incident(s)
         li.nav-item
-          a.nav-link.active(href='person.html') Person(s)
+          a.nav-link.active(href='/person') Person(s)
         li.nav-item
-          a.nav-link(href='vehicle.html') Vehicle(s)
+          a.nav-link(href='/vehicle') Vehicle(s)
         //
           <div class="col">
           <li class="nav-item">
@@ -53,9 +54,41 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
           </div>
 nav.navbar.navbar-dark.bg-dark
   .container-fluid
-    a.navbar-brand West-MEC Police Department &ocir; Person Search
+    a.navbar-brand Person Search
     form.d-flex
       input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
       button.btn.btn-outline-success(type='submit') Search
+br
+.d-grid.gap-2.col-6.mx-auto
+  a(href='/person/report')
+    button#createNew_Button.btn.btn-primary(type='button') Add A New Person
+br
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .container
+      .row
+        .col-1
+          img(src='https://ca.slack-edge.com/TSJ4J3C2H-USA8MDF8R-6483d79db767-512' alt='guy' height='55px' width='55px')
+        .col-6
+          h1 Samuel Maitre-Artiste Harris
+        .col-4
+          h1 5&apos;6&quot; &ndash; Male (22 Yrs.)
+        .col-1
+          img(src='danger.png' alt='danger' height='50px' width='55px')
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .d-flex.justify-content-center
+      .spinner-border.text-secondary(role='status')
+        span.visually-hidden Loading...
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .d-flex.justify-content-center
+      .spinner-border.text-secondary(role='status')
+        span.visually-hidden Loading...
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .d-flex.justify-content-center
+      .spinner-border.text-secondary(role='status')
+        span.visually-hidden Loading...
 // Option 1: Bootstrap Bundle with Popper
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js' integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0' crossorigin='anonymous')

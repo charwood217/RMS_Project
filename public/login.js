@@ -10,7 +10,7 @@ function validate(){
 
     if(username === "admin" && password === "westmec"){
         alert("Login successful.");
-        location.replace("home.html");
+        location.replace("home");
 
         return false;
     }else{

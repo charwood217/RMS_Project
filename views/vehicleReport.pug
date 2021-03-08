@@ -1,6 +1,208 @@
 doctype html
 head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible' content='ie=edge')
-  title Document
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+  // CSS custom
+  link(rel='stylesheet' href='/stylesheets/reportfiles.css')
+  // darkmode
+  script(src='https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js')
+  script.
+    const button = document.getElementById("button")
+    function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  title Vehicle Report
+  link(rel='icon' type='image' href='logo.png')
+br
+br
+.mx-auto(style='width: 80%;')
+  .card.text-center
+    h2.card-header.mx-auto.darkmode--activated(style='width: 100%;') Vehicle Report
+    .row.g-2.m-3
+      .col-md.me-3
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text License Plate
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text License Plate State
+          select#inputGroupSelect01.form-select
+            option(selected='') Choose...
+            option(value='AL') Alabama
+            option(value='AK') Alaska
+            option(value='AZ') Arizona
+            option(value='AR') Arkansas
+            option(value='CA') California
+            option(value='CO') Colorado
+            option(value='CT') Connecticut
+            option(value='DE') Delaware
+            option(value='DC') District Of Columbia
+            option(value='FL') Florida
+            option(value='GA') Georgia
+            option(value='HI') Hawaii
+            option(value='ID') Idaho
+            option(value='IL') Illinois
+            option(value='IN') Indiana
+            option(value='IA') Iowa
+            option(value='KS') Kansas
+            option(value='KY') Kentucky
+            option(value='LA') Louisiana
+            option(value='ME') Maine
+            option(value='MD') Maryland
+            option(value='MA') Massachusetts
+            option(value='MI') Michigan
+            option(value='MN') Minnesota
+            option(value='MS') Mississippi
+            option(value='MO') Missouri
+            option(value='MT') Montana
+            option(value='NE') Nebraska
+            option(value='NV') Nevada
+            option(value='NH') New Hampshire
+            option(value='NJ') New Jersey
+            option(value='NM') New Mexico
+            option(value='NY') New York
+            option(value='NC') North Carolina
+            option(value='ND') North Dakota
+            option(value='OH') Ohio
+            option(value='OK') Oklahoma
+            option(value='OR') Oregon
+            option(value='PA') Pennsylvania
+            option(value='RI') Rhode Island
+            option(value='SC') South Carolina
+            option(value='SD') South Dakota
+            option(value='TN') Tennessee
+            option(value='TX') Texas
+            option(value='UT') Utah
+            option(value='VT') Vermont
+            option(value='VA') Virginia
+            option(value='WA') Washington
+            option(value='WV') West Virginia
+            option(value='WI') Wisconsin
+            option(value='WY') Wyoming
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text Vehicle Vin Number
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text Car Color
+          select#inputGroupSelect01.form-select
+            option(selected='') Choose...
+            option(value='1') BLK
+            option(value='2') WHI
+            option(value='3') SIL
+            option(value='4') RED
+            option(value='5') BLU
+            option(value='6') DBL
+            option(value='7') LBL
+            option(value='8') BRZ
+            option(value='9') BRO
+            option(value='10') GLD
+            option(value='11') GRY
+            option(value='12') GRN
+            option(value='13') MAR
+            option(value='14') ORG
+            option(value='15') PNK
+            option(value='16') PLE
+            option(value='17') TAN
+            option(value='18') YEL
+            option(value='19') TEA
+            option(value='20') UNK
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text Car Make
+          select#inputGroupSelect01.form-select
+            option.vehicle-search(value='0' selected='') Choose...
+            option.vehicle-search(value='1') BMW
+            option(value='ACURA') ACURA
+            option(value='ASTON MARTIN') ASTON MARTIN
+            option(value='AUDI') AUDI
+            option(value='BENTLEY') BENTLEY
+            option(value='BMW') BMW
+            option(value='BUICK') BUICK
+            option(value='CADILLAC') CADILLAC
+            option(value='CHEVROLET') CHEVROLET
+            option(value='CHRYSLER') CHRYSLER
+            option(value='DODGE') DODGE
+            option(value='FERRARI') FERRARI
+            option(value='FORD') FORD
+            option(value='GMC') GMC
+            option(value='HONDA') HONDA
+            option(value='HUMMER') HUMMER
+            option(value='HYUNDAI') HYUNDAI
+            option(value='INFINITI') INFINITI
+            option(value='ISUZU') ISUZU
+            option(value='JAGUAR') JAGUAR
+            option(value='JEEP') JEEP
+            option(value='KIA') KIA
+            option(value='LAMBORGHINI') LAMBORGHINI
+            option(value='LAND ROVER') LAND ROVER
+            option(value='LEXUS') LEXUS
+            option(value='LINCOLN') LINCOLN
+            option(value='LOTUS') LOTUS
+            option(value='MASERATI') MASERATI
+            option(value='MAYBACH') MAYBACH
+            option(value='MAZDA') MAZDA
+            option(value='MERCEDES-BENZ') MERCEDES-BENZ
+            option(value='MERCURY') MERCURY
+            option(value='MINI') MINI
+            option(value='MITSUBISHI') MITSUBISHI
+            option(value='NISSAN') NISSAN
+            option(value='PONTIAC') PONTIAC
+            option(value='PORSCHE') PORSCHE
+            option(value='ROLLS-ROYCE') ROLLS-ROYCE
+            option(value='SAAB') SAAB
+            option(value='SATURN') SATURN
+            option(value='SUBARU') SUBARU
+            option(value='SUZUKI') SUZUKI
+            option(value='TOYOTA') TOYOTA
+            option(value='VOLKSWAGEN') VOLKSWAGEN
+            option(value='VOLVO') VOLVO
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text Year
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text Vehicle Value
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+        .input-group.mb-3
+          span#inputGroup-sizing-default.input-group-text Current R.O. (Registered Owner)
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+        .input-group.mb-3
+          label.input-group-text(for='inputGroupFile01') Upload
+          input#inputGroupFile01.form-control(type='file')
+      .col-md.ms-3
+        .row.g-2
+          .col-md
+            .form-check
+              label.form-check-label(for='defaultCheck1') Title in Vehicle?
+              input#defaultCheck1.form-check-input(type='checkbox' value='')
+            .form-check
+              input#defaultCheck1.form-check-input(type='checkbox' value='')
+              label.form-check-label(for='defaultCheck1')
+                | Keys in Vehicle?
+            .form-check
+              input#defaultCheck1.form-check-input(type='checkbox' value='')
+              label.form-check-label(for='defaultCheck1')
+                | Vehicle Locked?
+            .form-check
+              input#defaultCheck1.form-check-input(type='checkbox' value='')
+              label.form-check-label(for='defaultCheck1')
+                | Vehicle Towed?
+            br
+            br
+            h4 Additional Details
+            .form-floating.mb-3
+              textarea#floatingTextarea.form-control.overflow-auto(placeholder='Leave a comment here' style='height: 300px; min-height: 300px; max-height: 300px;')
+              label(for='floatingTextarea') Details
+      #userSerial_holder.input-group.mb-3
+        span#basic-addon1.input-group-text Submitting Officer Serial Number
+        input.form-control(type='text' placeholder='Serial Number' aria-label='Username' aria-describedby='basic-addon1')
+      #password_holder.col-auto
+        label.col-form-label(for='inputPassword6') User Password
+        input#inputPassword6.form-control(type='password' aria-describedby='passwordHelpInline')
+      div
+        a(href='person.html')
+          button.btn.btn-primary.btn-lg.col-md.ms-3.mx-3(type='button') Submit
+  br
+  br
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js' integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0' crossorigin='anonymous')

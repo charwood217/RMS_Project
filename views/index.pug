@@ -13,6 +13,7 @@ head
   // Login JS
   script(src='login.js')
   title WMPD Login
+  link(rel='icon' type='image' href='logo.png')
 .d-md-flex.half
   .bg(style="background-image: url('login_images/bg.jpg');")
   .contents
@@ -29,20 +30,14 @@ head
             form(action='#' method='post')
               .form-group.first
                 label(for='username') Username
-                input#username.form-control(type='text' placeholder='your-email@gmail.com')
+                input#username.form-control(type='text' placeholder='your-email@gmail.com' onkeydown='handleEnter(event)')
               .form-group.last.mb-3
                 label(for='password') Password
-                input#password.form-control(type='password' placeholder='Your Password')
+                input#password.form-control(type='password' placeholder='Your Password' onkeydown='handleEnter(event)')
               .d-sm-flex.mb-5.align-items-center
-                label.control.control--checkbox.mb-3.mb-sm-0
-                  span.caption Remember me
-                  input(type='checkbox' checked='checked')
-                  .control__indicator
-                span.ml-auto
-                  a.forgot-pass(href='#') Forgot Password
-              a(href='home.html')
-                // <input type="submit" value="Log In" class="btn btn-block btn-primary" />
-                input.btn.btn-block.btn-primary(type='button' value='Log In')
+                .control__indicator
+              // <input type="submit" value="Log In" class="btn btn-block btn-primary" />
+              input.btn.btn-block.btn-primary(type='button' value='Log In' onclick='validate()')
 script(src='login_js/jquery-3.3.1.min.js')
 script(src='login_js/popper.min.js')
 script(src='login_js/bootstrap.min.js')
