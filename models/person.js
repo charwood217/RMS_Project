@@ -3,8 +3,8 @@ var mongoose =require('mongoose');
 //Export Model
 module.exports = mongoose.model('person', personSchema);
 
-var mongoose = require('mongoose');
-var faker = require('faker');
+//var mongoose = require('mongoose');
+//var faker = require('faker');
 // var Schema = mongoose.Schema;
 // var PersonSchema = new Schema({
 //     first_name: { type: String, required: true, maxlength: 100 },
