@@ -3,7 +3,7 @@ const { DateTime } = require("luxon");
 
 var Schema = mongoose.Schema;
 
-var personReportSchema = new Schema({
+var vehicleReportSchema = new Schema({
     first_name: { type: String, required: true, maxlength: 100 },
     middle_name: {type: String, required: false, maxlength: 100 },
     last_name: { type: String, required: true, maxlength: 100 },
@@ -23,4 +23,4 @@ var personReportSchema = new Schema({
 
 
 //Export Model
-module.exports = mongoose.model('personReport', personReportSchema);
+module.exports = mongoose.model('vehicleReport', vehicleReportSchema);
