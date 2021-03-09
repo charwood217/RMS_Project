@@ -4,11 +4,11 @@ const { DateTime } = require("luxon");
 var Schema = mongoose.Schema;
 
 var incidentReportSchema = new Schema({
-    first_name: { type: String, required: true, maxlength: 100 },
-    middle_name: {type: String, required: false, maxlength: 100 },
-    last_name: { type: String, required: true, maxlength: 100 },
-    phonenumber: { type: Number, required: true },
-    city: { type: String, required: true },
+    date_of_occurence: { type: String, required: true, maxlength: 100 },
+    report_date: {type: String, required: false, maxlength: 100 },
+    incident_type: { type: String, required: true, maxlength: 100 },
+    address_of_incident: { type: Number, required: true },
+    name_of_location: { type: String, required: true },
     state: {type: String, required: true},
     country: {type: String, required: true},
     height: {type: String, required: true, maxlength: 5},

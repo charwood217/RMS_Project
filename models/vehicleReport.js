@@ -4,21 +4,15 @@ const { DateTime } = require("luxon");
 var Schema = mongoose.Schema;
 
 var vehicleReportSchema = new Schema({
-    first_name: { type: String, required: true, maxlength: 100 },
-    middle_name: {type: String, required: false, maxlength: 100 },
-    last_name: { type: String, required: true, maxlength: 100 },
-    phonenumber: { type: Number, required: true },
-    city: { type: String, required: true },
-    state: {type: String, required: true},
-    country: {type: String, required: true},
-    height: {type: String, required: true, maxlength: 5},
-    weight: {type: String, required: true, maxlength: 4},
-    witness: {type: String, required: true},
-    victim: {type: String, required: true},
-    race: {type: String, required: true},
-    gender: {type: String, required: true},
-
-
+    licenseplate: { type: String, required: true, maxlength: 100 },
+    licenseplate_state: {type: String, required: false, maxlength: 100 },
+    car_make: { type: String, required: true, maxlength: 100 },
+    car_year: { type: Number, required: true },
+    color_of_car: { type: String, required: true },
+    vin: {type: String, required: true},
+    value: {type: String, required: true},
+    owner: {type: String, required: true},
+    officer_serial_number: {type: String, required: true},
 });
 
 

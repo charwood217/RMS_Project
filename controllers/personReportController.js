@@ -16,18 +16,20 @@ exports.person_Report_Populate = function (req, res, next){
 };
 
 exports.addData = function(req, res, next){
-   const person = new Person({
-       first_name: req.body.first_name,
-       middle_name: req.body.middle_name,
-       last_name: req.body.last_name,
+   const person = new person({
+       firstname: req.body.firstname,
+       middlename: req.body.middlename,
+       lastname: req.body.lastname,
+       socialsecurity: req.body.socialsecurity,
+       age: req.body.age,
+       birthdate: req.body.age,
        phonenumber: req.body.phonenumber,
-       city: req.body.city,
-       state: req.body.state,
-       country: req.body.country,
+       homeaddress: req.body.homeaddress,
+       weight: req.body.weight,
        height: req.body.height,
-       witness: req.body.height,
-       victim: req.body.victim,
+       eyecolor: req.body.eyecolor,
        race: req.body.race,
+       haircolor: req.body.haircolor,
        gender: req.body.race,
    });
    person.save();
