@@ -21,36 +21,61 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var mongoose = require('mongoose');
 var dex_db_url = 'mongodb+srv://admin_C:westmec@rms-cluster.tnyt0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+mongoose.connect(dex_db_url, { useNewUrlParser: true, useUnifiedTopology: true })
 var mongoDB = process.env.URI || dex_db_url;
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-app.get('/home', (req,res) => {
-  res.render('home');
-});
-app.get('/incident', (req,res) => {
-  res.render('incident');
-});
-app.get('/person', (req,res) =>{
-  res.render('person');
-});
-app.get('/vehicle', (req,res) => {
-  res.render('vehicle');
-});
-app.get('/vehicle/report', (req,res) => {
-  res.render('vehicleReport');
-});
-app.get('/incident/report', (req,res) =>{
-  res.render('incidentReport');
-});
-app.get('/person/report', (req,res) => {
-  res.render('personReport');
-});
+// app.get('/', (req, res) => {
+//   res.render('index');
+// });
+// app.get('/home', (req,res) => {
+//   res.render('home');
+// });
+// app.get('/incident', (req,res) => {
+//   res.render('incident');
+// });
+// app.get('/person', (req,res) =>{
+//   res.render('person');
+// });
+// app.get('/vehicle', (req,res) => {
+//   res.render('vehicle');
+// });
+// app.get('/vehicle/report', (req,res) => {
+//   res.render('vehicleReport');
+// });
+// app.get('/incident/report', (req,res) =>{
+//   res.render('incidentReport');
+// });
+// app.get('/person/report', (req,res) => {
+//   res.render('personReport');
+// });
+
+// app.get('/add-data', (req, res) => {
+//   const person = new Person({
+//     first_name: 'Christian',
+//     middle_name: 'Micheal',
+//     last_name: 'Harwood',
+//     phonenumber: '6024602700',
+//     city: 'Litchfield Park',
+//     state: 'AZ',
+//     country: 'U.S.',
+//     height: '511',
+//     witness: 'Jerry',
+//     victim: 'Elijah',
+//     race: 'White',
+//     gender: 'Male',
+// });
+// person.save()
+//   .then((result) => {
+//     res.send(result)
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+// });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
