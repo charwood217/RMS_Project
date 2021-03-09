@@ -6,6 +6,14 @@ head
   link(rel='stylesheet' href='reportfiles.css')
   // Bootstrap CSS
   link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+  //darmode
+  script(src='https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js')
+  script.
+    const button = document.getElementById("button")
+    function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
   title Person Report
   link(rel='icon' type='image' href='logo.png')
 br
@@ -18,36 +26,36 @@ br
         // Field that allows you to input the name(s) of the person of choice
         .input-group.mb-3
           .col
-            input.form-control(type='text' placeholder='First Name' aria-label='First name')
+            input.form-control(type='text' placeholder='First Name' aria-label='First name' for='firstname')
           .col
-            input.form-control(type='text' placeholder='Middle Name' aria-label='Middle name')
+            input.form-control(type='text' placeholder='Middle Name' aria-label='Middle name' for='middlename')
           .col
-            input.form-control(type='text' placeholder='Last Name' aria-label='Last name')
+            input.form-control(type='text' placeholder='Last Name' aria-label='Last name' for='lastname')
         // Field that allows you to input the social security and other immediate identification fields of the person of choice
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Social Security Number
-          input.form-control(type='text' placeholder='XXX-XX-XXXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='XXX-XX-XXXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='socialsecurity')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Age
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='age')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Date of Birth
-          input.form-control(type='text' placeholder='MM/DD/YYYY' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='MM/DD/YYYY' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='birthdate')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Phone Number
-          input.form-control(type='text' placeholder='(XXX)-XXX-XXXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='(XXX)-XXX-XXXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='phonenumber')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Home Address
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='homeaddress')
         // other physical information that you input to help locate and differinciate someone, with checkbox/typing/dropdown fields
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Weight
-          input.form-control(type='text' placeholder='XXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='XXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='weight')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Height
-          input.form-control(type='text' placeholder='XXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='XXX' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='height')
         .input-group.mb-3
-          label.input-group-text(for='inputGroupSelect01') Eye Color
+          label.input-group-text(for='eyecolor') Eye Color
           select#inputGroupSelect01.form-select
             option(selected='') Choose...
             option(value='1') BLK
@@ -72,7 +80,7 @@ br
             option(value='20') UNK
             option(value='21') HAZ
         .input-group.mb-3
-          label.input-group-text(for='inputGroupSelect01') Race
+          label.input-group-text(for='inputGroupSelect01' for='race') Race
           select#inputGroupSelect01.form-select
             option(selected='') Choose...
             option(value='1') B
@@ -82,7 +90,7 @@ br
             option(value='5') A
             option(value='6') U
         .input-group.mb-3
-          label.input-group-text(for='inputGroupSelect01') Hair Color
+          label.input-group-text(for='inputGroupSelect01' for='haircolor') Hair Color
           select#inputGroupSelect01.form-select
             option(selected='') Choose...
             option(value='1') BLK
@@ -107,7 +115,7 @@ br
             option(value='20') UNK
             option(value='21') BLD
         .input-group.mb-3
-          label.input-group-text(for='inputGroupSelect01') Gender
+          label.input-group-text(for='inputGroupSelect01' for='gender') Gender
           select#inputGroupSelect01.form-select
             option(selected='') Unknown
             option(value='1') Male

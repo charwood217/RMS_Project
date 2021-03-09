@@ -7,6 +7,14 @@ head
   link(rel='stylesheet' href='/stylesheets/three_fields.css')
   // Bootstrap CSS
   link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+  //darkmode
+  script(src='https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js')
+  script.
+    const button = document.getElementById("button")
+    function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
   title Incident Report
   link(rel='icon' type='image' href='logo.png')
 br
@@ -18,19 +26,19 @@ br
       .col-md.me-3
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Date of Occurrence
-          input.form-control(type='text' placeholder='MM/DD/YYYY' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='MM/DD/YYYY' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='date_of_occurrence')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Report Date
-          input.form-control(type='text' placeholder='MM/DD/YYYY' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='MM/DD/YYYY' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='report_date')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Incident Type (Radio Code)
-          input.form-control(type='number' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='number' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='incident_type')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Address of Incident
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='address_of_incident')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Name of Location
-          input.form-control(type='text' placeholder='Walmart, Circle K, ect.' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' placeholder='Walmart, Circle K, ect.' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='name_of_location') 
         table.table.table-striped.table-hover.border.border-light
           thead
             tr
