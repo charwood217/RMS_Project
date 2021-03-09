@@ -26,10 +26,10 @@ br
       .col-md.me-3
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text License Plate
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='licenseplate')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text License Plate State
-          select#inputGroupSelect01.form-select
+          select#inputGroupSelect01.form-select(for='licenseplate_state')
             option(selected='') Choose...
             option(value='AL') Alabama
             option(value='AK') Alaska
@@ -84,10 +84,10 @@ br
             option(value='WY') Wyoming
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Vehicle Vin Number
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='vin')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Car Color
-          select#inputGroupSelect01.form-select
+          select#inputGroupSelect01.form-select(for='color_of_car')
             option(selected='') Choose...
             option(value='1') BLK
             option(value='2') WHI
@@ -111,7 +111,7 @@ br
             option(value='20') UNK
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Car Make
-          select#inputGroupSelect01.form-select
+          select#inputGroupSelect01.form-select(for='car_make')
             option.vehicle-search(value='0' selected='') Choose...
             option.vehicle-search(value='1') BMW
             option(value='ACURA') ACURA
@@ -160,13 +160,13 @@ br
             option(value='VOLVO') VOLVO
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Year
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='car_year')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Vehicle Value
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='value')
         .input-group.mb-3
           span#inputGroup-sizing-default.input-group-text Current R.O. (Registered Owner)
-          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default')
+          input.form-control(type='text' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-default' for='owners ')
         .input-group.mb-3
           label.input-group-text(for='inputGroupFile01') Upload
           input#inputGroupFile01.form-control(type='file')
@@ -201,7 +201,7 @@ br
         label.col-form-label(for='inputPassword6') User Password
         input#inputPassword6.form-control(type='password' aria-describedby='passwordHelpInline')
       div
-        a(href='person.html')
+        a(href='/vehicle')
           button.btn.btn-primary.btn-lg.col-md.ms-3.mx-3(type='button') Submit
   br
   br
