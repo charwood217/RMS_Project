@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var mongoose = require('mongoose');
 var dex_db_url = 'mongodb+srv://admin_C:westmec@rms-cluster.tnyt0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+mongoose.connect(dex_db_url, { useNewUrlParser: true, useUnifiedTopology: true })
 var mongoDB = process.env.URI || dex_db_url;
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
@@ -51,6 +52,30 @@ app.get('/incident/report', (req,res) =>{
 app.get('/person/report', (req,res) => {
   res.render('personReport');
 });
+
+// app.get('/add-data', (req, res) => {
+//   const person = new Person({
+//     first_name: 'Christian',
+//     middle_name: 'Micheal',
+//     last_name: 'Harwood',
+//     phonenumber: '6024602700',
+//     city: 'Litchfield Park',
+//     state: 'AZ',
+//     country: 'U.S.',
+//     height: '511',
+//     witness: 'Jerry',
+//     victim: 'Elijah',
+//     race: 'White',
+//     gender: 'Male',
+// });
+// person.save()
+//   .then((result) => {
+//     res.send(result)
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+// });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
