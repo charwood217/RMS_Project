@@ -15,10 +15,7 @@
     "faker": "^5.4.0",
     "http-errors": "~1.6.3",
     "mongodb": "^3.6.4",
-<<<<<<< HEAD
-=======
     "mongoose": "^5.11.19",
->>>>>>> DatabasePull
     "morgan": "~1.9.1",
     "pug": "^3.0.2"
   }
