@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Dark mode-->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+    const button = document.getElementById("button")
+    function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+  <link href="/stylesheets/three_fields.css" rel="stylesheet">
+  <title>Person</title>
+  <link rel="icon" type="image" href="logo.png">
+</head>
+<!-- Links in the navigation bar that will take you to all the other pages-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid"><a class="navbar-brand" href="#">West-Mec Police Department</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="/home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/incident">Incident(s)</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/person">Person(s)</a></li>
+        <li class="nav-item"><a class="nav-link" href="/vehicle">Vehicle(s)</a></li>
+        <!--
+        <div class="col">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        </div>
+        <div class="col">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Incident(s)</a>
+        </li>
+        </div>
+        <div class="col">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Person(s)</a>
+        </li>
+        </div>
+        <div class="col">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Vehicle(s)</a>
+        </li>
+        </div>
+        -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Search bar that would assist in finding certain people within the page-->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid"><a class="navbar-brand">Person Search</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav><br>
+<!-- Button that'll take you to the submission page, inputting new subjects to track-->
+<div class="d-grid gap-2 col-6 mx-auto"><a href="person_Report.html">
+    <button class="btn btn-primary" id="createNew_Button" type="button">Add A New Person</button></a></div><br>
+<!-- Display subjects/people/items in question, the first one is a placeholder for what we'd want the fields to look like. The rest are awaiting content.-->
+<section id="field_holder">
+  <div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="container">
+      <div class="row">
+        <div class="col-1"><img src="https://ca.slack-edge.com/TSJ4J3C2H-USA8MDF8R-6483d79db767-512" alt="guy" height="55px" width="55px"></div>
+        <div class="col-6">
+          <h1>Samuel Maitre-Artiste Harris</h1>
+        </div>
+        <div class="col-4">
+          <h1>5&apos;6&quot; &ndash; Male (22 Yrs.)</h1>
+        </div>
+        <div class="col-1"><img src="danger.png" alt="danger" height="50px" width="55px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="container">
+      <div class="row">
+        <div class="col-1"><img src="eren.jpeg" alt="guy" height="55px" width="55px"></div>
+        <div class="col-6">
+          <h1>Eren Jaeger</h1>
+        </div>
+        <div class="col-4">
+          <h1>5&apos;7&quot; &ndash; Male (19 Yrs.)</h1>
+        </div>
+        <div class="col-1"><img src="danger.png" alt="danger" height="50px" width="55px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="container">
+      <div class="row">
+        <div class="col-1"><img src="kyle.jpeg" alt="guy" height="55px" width="55px"></div>
+        <div class="col-6">
+          <h1>Kyle Peck</h1>
+        </div>
+        <div class="col-4">
+          <h1>6&apos;7&quot; &ndash; Male (23 Yrs.)</h1>
+        </div>
+        <div class="col-1"><img src="danger.png" alt="danger" height="50px" width="55px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="container">
+      <div class="row">
+        <div class="col-1"><img src="azula.jpeg" alt="guy" height="55px" width="55px"></div>
+        <div class="col-6">
+          <h1>Princess Azula</h1>
+        </div>
+        <div class="col-4">
+          <h1>5&apos;0&quot; &ndash; Female (14 Yrs.)</h1>
+        </div>
+        <div class="col-1"><img src="danger.png" alt="danger" height="50px" width="55px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="container">
+      <div class="row">
+        <div class="col-1"><img src="dio.jpeg" alt="guy" height="55px" width="55px"></div>
+        <div class="col-6">
+          <h1>Dio Brando</h1>
+        </div>
+        <div class="col-4">
+          <h1>6&apos;5&quot; &ndash; Male (120 Yrs.)</h1>
+        </div>
+        <div class="col-1"><img src="danger.png" alt="danger" height="50px" width="55px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="field_holder">
+  <div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
+    </div>
+  </div>
+</section>
+<!-- Option 1: Bootstrap Bundle with Popper-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

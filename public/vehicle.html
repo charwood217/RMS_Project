@@ -27,34 +27,34 @@
 </head>
 
 <body>
-      <!-- Links in the navigation bar that will take you to all the other pages -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">West-Mec Police Department</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-    
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/home">Home</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="/incident">Incident(s)</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="/person">Person(s)</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/vehicle">Vehicle(s)</a>
-                        </li>
-    
-                        <!-- <div class="col">
+    <!-- Links in the navigation bar that will take you to all the other pages -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">West-Mec Police Department</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/incident">Incident(s)</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/person">Person(s)</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/vehicle">Vehicle(s)</a>
+                    </li>
+
+                    <!-- <div class="col">
                           <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#">Home</a>
                           </li>
@@ -74,73 +74,136 @@
                               <a class="nav-link active" aria-current="page" href="#">Vehicle(s)</a>
                           </li>
                       </div> -->
-    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Search bar that'll assist you in finding specific items -->
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand">Vehicle Search</a>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-            </div>
-        </nav>
-    
-        <br>
-<!-- Button that'll take you to the submission page, inputting new subjects to track -->
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="vehicleReport.html">
-                <button class="btn btn-primary" type="button" id="createNew_Button">Add A New Vehicle</button>
-            </a>
-        </div>
-    
-        <br>
-<!-- Empty fields that are 'loading,' but awaiting new content to display -->
-        <section id="field_holder">
-            <div class="shadow p-3 mb-5 bg-body rounded">
-                <div class="d-flex justify-content-center">
-                    <div class="spinner-border text-secondary" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="field_holder">
-            <div class="shadow p-3 mb-5 bg-body rounded">
-                <div class="d-flex justify-content-center">
-                    <div class="spinner-border text-secondary" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="field_holder">
-            <div class="shadow p-3 mb-5 bg-body rounded">
-                <div class="d-flex justify-content-center">
-                    <div class="spinner-border text-secondary" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="field_holder">
-            <div class="shadow p-3 mb-5 bg-body rounded">
-                <div class="d-flex justify-content-center">
-                    <div class="spinner-border text-secondary" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
-    </body>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Search bar that'll assist you in finding specific items -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Vehicle Search</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+    <!-- Button that'll take you to the submission page, inputting new subjects to track -->
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="vehicleReport.html">
+            <button class="btn btn-primary" type="button" id="createNew_Button">Add A New Vehicle</button>
+        </a>
+    </div>
+
+    <br>
+    <!-- Empty fields that are 'loading,' but awaiting new content to display -->
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="ford.jpeg" alt="guy" height="55px"
+                        width="55px">
+                </div>
+                <div class="col-6">
+                    <h1>Ford f-150</h1>
+                </div>
+                <div class="col-4">
+                    <h1>License Plate: UY1287H</h1>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="audi.jpeg" alt="guy" height="55px"
+                        width="55px">
+                </div>
+                <div class="col-6">
+                    <h1>Audi R8</h1>
+                </div>
+                <div class="col-4">
+                    <h1>License Plate: V1268DS</h1>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="corvette.jpeg" alt="guy" height="55px"
+                        width="55px">
+                </div>
+                <div class="col-6">
+                    <h1>Corvette</h1>
+                </div>
+                <div class="col-4">
+                    <h1>License Plate: UWDI1278</h1>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="cruiser.jpeg" alt="guy" height="55px"
+                        width="55px">
+                </div>
+                <div class="col-6">
+                    <h1>PT cruiser</h1>
+                </div>
+                <div class="col-4">
+                    <h1>License Plate: YUI1278G</h1>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="ferrari.jpeg" alt="guy" height="55px"
+                        width="55px">
+                </div>
+                <div class="col-6">
+                    <h1>Ferrari</h1>
+                </div>
+                <div class="col-4">
+                    <h1>License Plate: 1267VHJ12</h1>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="field_holder">
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
