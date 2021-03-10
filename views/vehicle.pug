@@ -16,6 +16,7 @@ head
   link(href='/stylesheets/three_fields.css' rel='stylesheet')
   title Vehicle
   link(rel='icon' type='image' href='logo.png')
+// Links in the navigation bar that will take you to all the other pages
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
   .container-fluid
     a.navbar-brand(href='#') West-Mec Police Department
@@ -52,6 +53,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
           <a class="nav-link active" aria-current="page" href="#">Vehicle(s)</a>
           </li>
           </div>
+// Search bar that'll assist you in finding specific items
 nav.navbar.navbar-dark.bg-dark
   .container-fluid
     a.navbar-brand Vehicle Search
@@ -59,25 +61,62 @@ nav.navbar.navbar-dark.bg-dark
       input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
       button.btn.btn-outline-success(type='submit') Search
 br
+// Button that'll take you to the submission page, inputting new subjects to track
 .d-grid.gap-2.col-6.mx-auto
-  a(href='/vehicle/report')
+  a(href='vehicleReport.html')
     button#createNew_Button.btn.btn-primary(type='button') Add A New Vehicle
 br
-section#field_holder
-  .shadow.p-3.mb-5.bg-body.rounded
-    .d-flex.justify-content-center
-      .spinner-border.text-secondary(role='status')
-        span.visually-hidden Loading...
-section#field_holder
-  .shadow.p-3.mb-5.bg-body.rounded
-    .d-flex.justify-content-center
-      .spinner-border.text-secondary(role='status')
-        span.visually-hidden Loading...
-section#field_holder
-  .shadow.p-3.mb-5.bg-body.rounded
-    .d-flex.justify-content-center
-      .spinner-border.text-secondary(role='status')
-        span.visually-hidden Loading...
+// Empty fields that are 'loading,' but awaiting new content to display
+.shadow.p-3.mb-5.bg-body.rounded
+  .container
+    .row
+      .col-1
+        img(src='ford.jpeg' alt='guy' height='55px' width='55px')
+      .col-6
+        h1 Ford f-150
+      .col-4
+        h1 License Plate: UY1287H
+      .col-1
+.shadow.p-3.mb-5.bg-body.rounded
+  .container
+    .row
+      .col-1
+        img(src='audi.jpeg' alt='guy' height='55px' width='55px')
+      .col-6
+        h1 Audi R8
+      .col-4
+        h1 License Plate: V1268DS
+      .col-1
+.shadow.p-3.mb-5.bg-body.rounded
+  .container
+    .row
+      .col-1
+        img(src='corvette.jpeg' alt='guy' height='55px' width='55px')
+      .col-6
+        h1 Corvette
+      .col-4
+        h1 License Plate: UWDI1278
+      .col-1
+.shadow.p-3.mb-5.bg-body.rounded
+  .container
+    .row
+      .col-1
+        img(src='cruiser.jpeg' alt='guy' height='55px' width='55px')
+      .col-6
+        h1 PT cruiser
+      .col-4
+        h1 License Plate: YUI1278G
+      .col-1
+.shadow.p-3.mb-5.bg-body.rounded
+  .container
+    .row
+      .col-1
+        img(src='ferrari.jpeg' alt='guy' height='55px' width='55px')
+      .col-6
+        h1 Ferrari
+      .col-4
+        h1 License Plate: 1267VHJ12
+      .col-1
 section#field_holder
   .shadow.p-3.mb-5.bg-body.rounded
     .d-flex.justify-content-center

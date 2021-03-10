@@ -28,11 +28,13 @@
 <body style="background-color: #23272a;" id="bootstrap-overrides">
   <br>
   <br>
+  <!-- card with all the actual submission information within it -->
   <div class="mx-auto" style="width: 80%;">
     <div class="card text-center">
       <h2 class="card-header mx-auto darkmode--activated" style="width: 100%;">Vehicle Report</h2>
       <div class="row g-2 m-3">
         <div class="col-md me-3">
+          <!-- Information regarding identification of the vehicle -->
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">License Plate</span>
             <input type="text" class="form-control" aria-label="Sizing example input"
@@ -187,6 +189,7 @@
             <input type="text" class="form-control" aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default">
           </div>
+          <!-- Lists the current registered owner, and allows you to upload an image of the vehicle owner. -->
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Current R.O. (Registered Owner)</span>
             <input type="text" class="form-control" aria-label="Sizing example input"
@@ -197,6 +200,7 @@
             <input type="file" class="form-control" id="inputGroupFile01">
           </div>
         </div>
+        <!-- Checkbox fields to see if things happened to, or things were in the vehicle -->
         <div class="col-md ms-3">
           <div class="row g-2">
             <div class="col-md">
@@ -222,6 +226,7 @@
                   Vehicle Towed?
                 </label>
               </div> <br><br>
+              <!-- Field to input other information about the vehicle, maybe to help with further identification -->
               <h4>Additional Details</h4>
               <div class="form-floating mb-3">
                 <textarea class="form-control overflow-auto" placeholder="Leave a comment here" id="floatingTextarea"
@@ -231,6 +236,7 @@
             </div>
           </div>
         </div>
+        <!-- Field that will allow the officer to input their identifications, so you can know who did what. -->
         <div class="input-group mb-3" id="userSerial_holder">
           <span class="input-group-text" id="basic-addon1">Submitting Officer Serial Number</span>
           <input type="text" class="form-control" placeholder="Serial Number" aria-label="Username"
