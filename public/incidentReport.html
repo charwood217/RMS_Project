@@ -16,13 +16,14 @@
 <body style="background-color: #23272a;">
     <br>
     <br>
-
+<!-- card with all the actual submission information within it -->
     <div class="mx-auto" style="width: 80%;">
             <div class="card text-center">
               <h2 class="card-header mx-auto" style="width: 100%;">Incident Report</h2>
               <div class="row g-2 m-3">
                 <div class="col-md me-3">
-
+<!-- input time of the crime/incident, time of the report itself, and the type of incident. Other information, such as;
+     address and location name are also expected to be filled in. -->
     <div class="input-group mb-3">
         <span class="input-group-text" id="inputGroup-sizing-default">Date of Occurrence</span>
         <input type="text" placeholder="MM/DD/YYYY" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
@@ -270,6 +271,7 @@
                           </tr>
                           </table>
                           <table></table>
+            <!-- Field to input additional information about details of the incident itself -->
             <thead>
                 <tr>
                     <th scope="col">Incident Report Details</th>
@@ -285,6 +287,7 @@
                     </th>
                 </tr>
             </tbody>
+            <!-- Field to disclose the type of report, which is important when describing incidents -->
                 <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupSelect01">Report Type</label>
                         <select class="form-select" id="inputGroupSelect01">
@@ -292,12 +295,12 @@
                           <option value="1">Supplementary Report</option>
                         </select>
                       </div>
-
+                      <!-- toggleable button that will disclose if the incident is in relation to domestic abuse. -->
                       <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
                   <label class="btn btn-outline-warning" for="btn-check-outlined">Domestic Abuse Aggressor Toggle</label><br>
                 </input>
                 <br>
-
+            <!-- Field that will allow the officer to input their identifications, so you can know who did what. -->
             <div class="input-group mb-3" id="userSerial_holder">
                     <span class="input-group-text" id="basic-addon1">Submitting Officer Serial Number</span>
                     <input type="text" class="form-control" placeholder="Serial Number" aria-label="Username" aria-describedby="basic-addon1">

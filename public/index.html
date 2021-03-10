@@ -24,7 +24,7 @@
   </head>
   <body>
   
-
+  <!-- Image displayed on the side to make the page seem a little less empty. -->
   <div class="d-md-flex half">
     <div class="bg" style="background-image: url('login_images/bg.jpg');"></div>
     <div class="contents">
@@ -36,6 +36,8 @@
               <div class="text-center mb-5">
               <h3>Login to <strong>West-MEC</strong> Police Department</h3>
               <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+              <!-- Fields to input the username and password. The login button will check both of the content in these fields
+                   before letting you inside the rest of the website -->
               </div>
               <form action="#" method="post">
                 <div class="form-group first">
@@ -47,6 +49,7 @@
                   <input type="password" class="form-control" placeholder="Your Password" id="password" onkeydown="handleEnter(event)">
                 </div>
                 
+                <!-- Now empty class that keeps the sizing of the login button normal. -->
                 <div class="d-sm-flex mb-5 align-items-center">
 
 
@@ -54,7 +57,7 @@
                   </label>
 
                 </div>
-
+                    <!-- Button that can take you into the page, by clicking and running the validation function first -->
                     <!-- <input type="submit" value="Log In" class="btn btn-block btn-primary" /> -->
                     <input type="button" value="Log In" class="btn btn-block btn-primary" onclick="validate()" />
 
