@@ -16,6 +16,7 @@
   <body style="background-color: #23272a;">
 <br>
 <br>
+<!-- card with all the actual submission information within it -->
     <div class="mx-auto" style="width: 80%;">
         <div class="card text-center">
           <h2 class="card-header mx-auto" style="width: 100%;">Person Report</h2>
@@ -160,6 +161,7 @@
                     </tr>
                   </tbody>
                 </table>
+              <!-- Allows you to upload an image of the person in question -->
               <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupFile01">Upload</label>
                 <input type="file" class="form-control" id="inputGroupFile01">
@@ -168,6 +170,7 @@
             <div class="col-md ms-3">
               <div class="row g-2">
                 <div class="col-md">
+                  <!-- Allows you to input the assumed orientation of the individual in question -->
                   <label for="formGroupExampleInput" class="form-label">Orientation</label>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -200,6 +203,7 @@
                     </label>
                   </div>
                 </div>
+                <!-- Clickable areas that can keep track of any affiliations the individual has -->
                 <div class="col-md">
                     <label for="formGroupExampleInput" class="form-label">Possible Affiliation(s)</label>
                   <div class="form-check form-switch">
@@ -225,6 +229,7 @@
                 </div>
               </div>
               <br>
+              <!-- field that lets you input the individuals vehicles information. (Tracks one) -->
               <table class="table table-striped table-hover border border-light">
                   <thead>
                     <tr>
@@ -246,6 +251,7 @@
                     </tr>
                   </tbody>
                 </table>
+                <!-- Field to input additional information about details of the person's registered vehicle -->
                 <table class="table table-striped table-hover border border-light">
                   <thead>
                     <tr>
@@ -263,6 +269,7 @@
               </tr>
                   </tbody>
                 </table>
+                <!-- toggleable buttons that will disclose if the individual is in relation to domestic abuse &/or dangerous -->
                 <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
                   <label class="btn btn-outline-warning" for="btn-check-outlined">Domestic Abuse Aggressor Toggle</label><br>
                 </input>
@@ -271,7 +278,7 @@
                   <label class="btn btn-outline-danger" for="btn-check-2-outlined">Dangerous Individual Toggle</label><br>
                 </input>
             </div>
-
+            <!-- Field that will allow the officer to input their identifications, so you can know who did what. -->
             <div class="input-group mb-3" id="userSerial_holder">
                 <span class="input-group-text" id="basic-addon1">Submitting Officer Serial Number</span>
                 <input type="text" class="form-control" placeholder="Serial Number" aria-label="Username" aria-describedby="basic-addon1">
