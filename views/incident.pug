@@ -13,9 +13,10 @@ head
     new Darkmode().showWidget();
     }
     window.addEventListener('load', addDarkmodeWidget);
-  link(href='/stylesheets/three_fields.css' rel='stylesheet')
+  link(href='./stylesheets/three_fields.css' rel='stylesheet')
   title Incident
   link(rel='icon' type='image' href='logo.png')
+// Links in the navigation bar that will take you to all the other pages
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
   .container-fluid
     a.navbar-brand(href='#') West-Mec Police Department
@@ -52,6 +53,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
           <a class="nav-link active" aria-current="page" href="#">Vehicle(s)</a>
           </li>
           </div>
+// Search bar that'll assist you in finding specific items
 nav.navbar.navbar-dark.bg-dark
   .container-fluid
     a.navbar-brand Incident Search
@@ -59,10 +61,72 @@ nav.navbar.navbar-dark.bg-dark
       input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
       button.btn.btn-outline-success(type='submit') Search
 br
+// Button that'll take you to the submission page, inputting new subjects to track
 .d-grid.gap-2.col-6.mx-auto
-  a(href='/incident/report')
+  a(href='incidentReport.html')
     button#createNew_Button.btn.btn-primary(type='button') Add A New Incident
 br
+// Empty fields that are 'loading,' but awaiting new content to display
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .container
+      .row
+        .col-1
+          h1 211
+        .col-6
+          h2 Robbery - 12/22/20 - Chase Bank
+        .col-4
+          h3 4 Males - 2 Suspects - Blue SUV
+        .col-1
+          img(src='danger.png' alt='danger' height='50px' width='55px')
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .container
+      .row
+        .col-1
+          h1 601
+        .col-6
+          h2 Missing Persons - 11/2/20 - 133 Lehi St, Mesa 
+        .col-4
+          h3 Possible Murder Weapon - CCTV Footage
+        .col-1
+          img(src='danger.png' alt='danger' height='50px' width='55px')
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .container
+      .row
+        .col-1
+          h1 451
+        .col-6
+          h2 Homicide - 10/12/20 - Holiday Inn
+        .col-4
+          h3 1 Suspect - 2 Possible Murder Weapons
+        .col-1
+          img(src='danger.png' alt='danger' height='50px' width='55px')
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .container
+      .row
+        .col-1
+          h1 390
+        .col-6
+          h2 DUI - 12/22/20 - I-10
+        .col-4
+          h3 Mike Dean - 2001 Red Corvette
+        .col-1
+          // <img src="danger.png" alt="danger" height="50px" width="55px">
+section#field_holder
+  .shadow.p-3.mb-5.bg-body.rounded
+    .container
+      .row
+        .col-1
+          h1 211
+        .col-6
+          h2 Robbery - 7/14/20 - QT
+        .col-4
+          h3  1 Male - Black or Green Impala
+        .col-1
+          img(src='danger.png' alt='danger' height='50px' width='55px')
 section#field_holder
   .shadow.p-3.mb-5.bg-body.rounded
     .d-flex.justify-content-center

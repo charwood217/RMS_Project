@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 var mongoose = require('mongoose');
-var dex_db_url = 'mongodb+srv://admin_C:westmec@rms-cluster.tnyt0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+var dex_db_url = 'mongodb+srv://admin_C:westmec@rms-cluster.tnyt0.mongodb.net/RMS_project?retryWrites=true&w=majority'
 mongoose.connect(dex_db_url, { useNewUrlParser: true, useUnifiedTopology: true })
 var mongoDB = process.env.URI || dex_db_url;
 mongoose.Promise = global.Promise;
