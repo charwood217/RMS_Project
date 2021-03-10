@@ -4,7 +4,7 @@ var express = require('express');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var router = express.Router();
-var Person = require('../models/person');
+var Person = require('../models/personReport');
 
 var url = "mongodb://localhost:3001/personReport";
 const { body,validationResult } = require('express-validator');
@@ -32,6 +32,7 @@ exports.addData = function(req, res, next){
        gender: req.body.race,
    });
    person.save();
+   console.log(person);
 //    next();
 };
 

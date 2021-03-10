@@ -11,8 +11,8 @@ var personReportSchema = new Schema({
     age: { type: String, required: true },
     birthdate: {type: String, required: true},
     phonenumber: {type: String, required: true},
-    homeaddress: {type: String, required: true, maxlength: 5},
-    weight: {type: String, required: true, maxlength: 4},
+    homeaddress: {type: String, required: true},
+    weight: {type: String, required: true},
     height: {type: String, required: true},
     eyecolor: {type: String, required: true},
     race: {type: String, required: true},
@@ -24,4 +24,4 @@ var personReportSchema = new Schema({
 
 
 //Export Model
-module.exports = mongoose.model('personReport', personReportSchema);
+module.exports = mongoose.model('Person', personReportSchema);
