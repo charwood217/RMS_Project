@@ -4,7 +4,7 @@ var express = require('express');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var router = express.Router();
-var Person = require('../models/person');
+var Person = require('../models/personReport');
 
 var url = "mongodb://localhost:3001/personReport";
 const { body,validationResult } = require('express-validator');
@@ -17,20 +17,22 @@ exports.person_Report_Populate = function (req, res, next){
 
 exports.addData = function(req, res, next){
    const person = new Person({
-       first_name: req.body.first_name,
-       middle_name: req.body.middle_name,
-       last_name: req.body.last_name,
+       firstname: req.body.first_name,
+       middlename: req.body.middle_name,
+       lastname: req.body.last_name,
+       socialsecurity: req.body.socialsecurity,
+       age: req.body.age,
+       birthdate: req.body.birthdate,
        phonenumber: req.body.phonenumber,
-       city: req.body.city,
-       state: req.body.state,
-       country: req.body.country,
+       homeaddress: req.body.homeaddress,
+       weight: req.body.weight,
        height: req.body.height,
-       witness: req.body.height,
-       victim: req.body.victim,
+       eyecolor: req.body.eyecolor,
        race: req.body.race,
        gender: req.body.race,
    });
    person.save();
+   console.log(person);
 //    next();
 };
 

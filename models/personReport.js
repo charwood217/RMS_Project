@@ -4,17 +4,17 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var personReportSchema = new Schema({
-    first_name: { type: String, required: true, maxlength: 100 },
-    middle_name: {type: String, required: false, maxlength: 100 },
-    last_name: { type: String, required: true, maxlength: 100 },
-    phonenumber: { type: Number, required: true },
-    city: { type: String, required: true },
-    state: {type: String, required: true},
-    country: {type: String, required: true},
-    height: {type: String, required: true, maxlength: 5},
-    weight: {type: String, required: true, maxlength: 4},
-    witness: {type: String, required: true},
-    victim: {type: String, required: true},
+    firstname: { type: String, required: true, maxlength: 100 },
+    middlename: {type: String, required: false, maxlength: 100 },
+    lastname: { type: String, required: true, maxlength: 100 },
+    socialsecurity: { type: Number, required: true },
+    age: { type: String, required: true },
+    birthdate: {type: String, required: true},
+    phonenumber: {type: String, required: true},
+    homeaddress: {type: String, required: true},
+    weight: {type: String, required: true},
+    height: {type: String, required: true},
+    eyecolor: {type: String, required: true},
     race: {type: String, required: true},
     gender: {type: String, required: true},
 
@@ -24,4 +24,4 @@ var personReportSchema = new Schema({
 
 
 //Export Model
-module.exports = mongoose.model('personReport', personReportSchema);
+module.exports = mongoose.model('Person', personReportSchema);

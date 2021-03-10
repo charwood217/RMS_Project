@@ -21,11 +21,11 @@ router.get('/person', personController.person_Populate);
 
 router.get('vehicle', vehicleController.vehicle_Populate);
 
-router.get('/incident-report', incidentReportController.incident_Report_Populate);
+router.get('/incident/report', incidentReportController.incident_Report_Populate);
 
-router.get('/person-report', personReportController.person_Report_Populate);
+router.get('/person/report', personReportController.person_Report_Populate);
 
-router.get('/vehicle-report', vehicleReportController.vehicle_Report_Populate);
+router.get('/vehicle/report', vehicleReportController.vehicle_Report_Populate);
 
-router.post('/person-report', personReportController.addData);
+router.post('/person/report', personReportController.addData);
 module.exports = router;
